@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="row gx-0">
+        <!-- side bar beginning -->
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white side-br col-2 col-sm col-md d-sm-none d-md-block d-md-none d-lg-block h-auto" >
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <img src="./images/Logo_white.svg" class="img-fluid mx-auto side-br-logo py-2">
+            </a>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sideBarNav" aria-controls="sideBarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end align-center" id="sideBarNav"> -->
+                <ul class="nav nav-pills flex-column mb-auto my-5 text-center">
+                <li class="nav-item mb-4">
+                    <a href="#" class="nav-link text-white" aria-current="page">
+                    Dashboard
+                    </a>
+                </li>
+                <li class="nav-item mb-4">
+                    <a href="#" class="nav-link text-white">
+                    Polls
+                    </a>
+                </li>
+                <li class="nav-item mb-4" >
+                    <a href="#" class="nav-link active text-white">
+                    Users
+                    </a>
+                </li>
+                <li class="nav-item mb-4" >
+                    <a href="#" class="nav-link text-white">
+                    Categories
+                    </a>
+                </li>
+                <li class="nav-item mb-4">
+                    <a href="#" class="nav-link text-white">
+                    Messages
+                    </a>
+                </li>
+                <li class="nav-item " >
+                    <a href="#" class="nav-link text-white">
+                    Log out
+                    </a>
+                </li>
+                </ul>
+           </div>
+        <!-- </div> -->
+    
+     <!-- Sidebar End     -->
+    <!-- beginning of nav  -->
+    <main class="col-10 col-md-12 col-sm-12 col-lg-10 all-percent p-0">
+        <nav class="navbar navbar-expand-md navbar-dark bg-chartpool col-12" aria-label="Fourth navbar example">
+            <div class="container">
+            <a class="navbar-brand logo-brand" href="#"><img src="./images/Logo_white.svg" class="d-lg-none white-logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0 d-flex align-items-center ">
+                <li class="nav-item">
+                    <a class="nav-link"  href="#"><img src="./images/notification _bell.png" class="rounded" width="25px" height="25px" alt="notification icon"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./images/Mask Group (1).png" class="rounded" width="50px" height="50px" alt="admin-icon"></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-bold active" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Admin</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                    <li><a class="dropdown-item" href="#">Polls</a></li>
+                    <li><a class="dropdown-item active" href="#">Users</a></li>
+                    <li><a class="dropdown-item" href="./categories.html">Categories</a></li>
+                    <li><a class="dropdown-item" href="./message.html">Messages</a></li>
+                    <li><a class="dropdown-item " href="#">Log out</a></li>
+                    </ul>
+            </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="search d-flex justify-content-between">
+                <div class=""> <button class="btn btn-polls mt-2 p-2 mssgbtn  ">Send Messages</button></div>
+               
+                <div class="ask"><input type="search" name="search" class=" mt-2 p-2" id="search" placeholder="search"></div>
+            </div> 
+            
+            <div class="row justify-content-center">
+                <div class=" col-md-5 border mx-4 g-0 p-2 chat-care1 mt-2">
+                    <ul class="chat">
+                        <li>
+                            <a href="" class="text-underline-hover text-black">
+                                <div class="card mb-3 rounded" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        
+                                      <div class="col-2">
+                                        <img src="./images/Mask Group (1).png" class=" mx-3 img-fluid rounded-start mt-1" alt="...">
+                                      </div>
+                                      <div class="col-10">
+                                        <div class="card-body">
+                                        
+                                            <div class="d-flex align-items-center justify-content-between mb-0">
+                                                <h6 class="card-title col-5 font">Tom Crusie Anthony</h6>
+                                          <p class="card-text col-5"><small class="text-muted font">11:54am | Monday 7th</small></p>
+                                              </div>
+                                              <p class="card-text mx-3 mb-2 font">Good afternoon, i cannot upload the .........</p>
+                                          </div>
+                                          
+                                          
+                                        </div>
+                                      </div>
+                            </a>
+                           
+                        </li>
+                        <li>
+                            <a href="" class="text-underline-hover text-black">
+                                <div class="card mb-3 rounded" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        
+                                      <div class="col-2">
+                                        <img src="./images/Mask Group (1).png" class=" mx-3 img-fluid rounded-start mt-1" alt="...">
+                                      </div>
+                                      <div class="col-10">
+                                        <div class="card-body">
+                                        
+                                            <div class="d-flex align-items-center justify-content-between mb-0">
+                                                <h6 class="card-title col-5 font">Tom Crusie Anthony</h6>
+                                          <p class="card-text col-5"><small class="text-muted font">11:54am | Monday 7th</small></p>
+                                              </div>
+                                              <p class="card-text mx-3 mb-2 font">Good afternoon, i cannot upload the .........</p>
+                                          </div>
+                                          
+                                          
+                                        </div>
+                                      </div>
+                            </a>
+                           
+                        </li>
+                        <li>
+                            <a href="" class="text-underline-hover text-black">
+                                <div class="card mb-3 rounded" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        
+                                      <div class="col-2">
+                                        <img src="./images/Mask Group (1).png" class=" mx-3 img-fluid rounded-start mt-1" alt="...">
+                                      </div>
+                                      <div class="col-10">
+                                        <div class="card-body">
+                                        
+                                            <div class="d-flex align-items-center justify-content-between mb-0">
+                                                <h6 class="card-title col-5 font">Tom Crusie Anthony</h6>
+                                          <p class="card-text col-5"><small class="text-muted font">11:54am | Monday 7th</small></p>
+                                              </div>
+                                              <p class="card-text mx-3 mb-2 font">Good afternoon, i cannot upload the .........</p>
+                                          </div>
+                                          
+                                          
+                                        </div>
+                                      </div>
+                            </a>
+                           
+                        </li>
+                        <li>
+                            <a href="" class="text-underline-hover text-black">
+                                <div class="card mb-3 rounded" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        
+                                      <div class="col-2">
+                                        <img src="./images/Mask Group (1).png" class=" mx-3 img-fluid rounded-start mt-1" alt="...">
+                                      </div>
+                                      <div class="col-10">
+                                        <div class="card-body">
+                                        
+                                            <div class="d-flex align-items-center justify-content-between mb-0">
+                                                <h6 class="card-title col-5 font">Tom Crusie Anthony</h6>
+                                          <p class="card-text col-5"><small class="text-muted font">11:54am | Monday 7th</small></p>
+                                              </div>
+                                              <p class="card-text mx-3 mb-2 font">Good afternoon, i cannot upload the .........</p>
+                                          </div>
+                                          
+                                          
+                                        </div>
+                                      </div>
+                            </a>
+                           
+                        </li>
+                        <li>
+                            <a href="" class="text-underline-hover text-black">
+                                <div class="card mb-3 rounded" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        
+                                      <div class="col-2">
+                                        <img src="./images/Mask Group (1).png" class=" mx-3 img-fluid rounded-start mt-1" alt="...">
+                                      </div>
+                                      <div class="col-10">
+                                        <div class="card-body">
+                                        
+                                            <div class="d-flex align-items-center justify-content-between mb-0">
+                                                <h6 class="card-title col-5 font">Tom Crusie Anthony</h6>
+                                          <p class="card-text col-5"><small class="text-muted font">11:54am | Monday 7th</small></p>
+                                              </div>
+                                              <p class="card-text mx-3 mb-2 font">Good afternoon, i cannot upload the .........</p>
+                                          </div>
+                                          
+                                          
+                                        </div>
+                                      </div>
+                            </a>
+                           
+                        </li>
+                    </ul>
+                    
+                        
+                      
+                </div>
+                  <div class="col-md-5 gx-0 gy-0 ">
+                      <div class="card card-top mt-2">
+                          <div class="card-header text-start">
+                              <span>
+                                 <img src="./images/Mask Group (1).png" alt="Agent"> <span><strong class=" font text-black p-2">Tom Crusie Anthony</strong> </span>
+                              </span>
+                          </div>
+                          <div class="card-body chat-care">
+                              <ul class="chat">
+                                  <li class="float-start text-align-left clearfix">
+                                      <span class="chat-img float-start clearfix mx-2">
+                                          <img src="./images/Mask Group (1).png" alt="Agent" class="img-circle" />
+                                      </span>
+                                      <div class="chat-body chat-body1 rounded-bottom rounded-end rounded-4">
+                                          <div class="header clearfix">
+                                              <strong class=" font text-black">Tom Crusie Anthony</strong> 
+                                                  
+                                          </div>
+                                          <p class="font">
+                                            Hello, Admin i am here to report that my poll result
+                                            is not displaying the total number of votes that is
+                                            expected, what should i do, or can you send me the
+                                            result for the poll here.
+                                           
+                                          </p>
+                                      </div>
+                                      <small class="right text-muted"><span class="glyphicon glyphicon-time"></span>11:54am | Monday 7th</small>
+                                  </li>
+                                  <li class="admin clearfix">
+                                      <span class="chat-img float-end clearfix  mx-5">
+                                          <img src="./images/Mask Group (1).png" alt="Admin" class="img-circle" />
+                                      </span>
+                                      <div class="chat-body chat-body2 rounded-bottom rounded-start rounded-4">
+                                          <div class="header clearfix">
+                                             
+                                              <strong class="float-end font text-black">Tom Crusie Anthony</strong>
+                                          </div>
+                                          <p class="font">
+                                            Hello, Admin i am here to report that my poll result
+                                            is not displaying the total number of votes that is
+                                            expected, what should i do, or can you send me the
+                                            result for the poll here.
+                                            
+                                          </p>
+                                          
+                                      </div>
+                                      <small class="left text-muted"><span class="glyphicon glyphicon-time"></span>11:54am | Monday 7th</small>
+                                  </li>
+                                  <li class="float-start text-align-left clearfix">
+                                      <span class="chat-img float-start clearfix mx-2">
+                                          <img src="./images/Mask Group (1).png" alt="Agent" class="img-circle" />
+                                      </span>
+                                      <div class="chat-body chat-body1 rounded-bottom rounded-end rounded-4">
+                                          <div class="header">
+                                              <strong class="font text-black">Tom Crusie Anthony</strong>
+                                                 
+                                          </div>
+                                          <p class="font">
+                                            Hello, Admin i am here to report that my poll result
+                                            is not displaying the total number of votes that is
+                                            expected, what should i do, or can you send me the
+                                            result for the poll here.
+                                           
+                                          </p>
+                                      </div>
+                                      <small class="float-end text-muted"><span class="glyphicon glyphicon-time"></span>11:54am | Monday 7th</small>
+                                  </li>
+                                  <li class="admin clearfix">
+                                      <span class="chat-img float-end clearfix  mx-5">
+                                          <img src="./images/Mask Group (1).png" alt="Admin" class="img-circle" />
+                                      </span>
+                                      <div class="chat-body chat-body2 rounded-bottom rounded-start rounded-4">
+                                          <div class="header clearfix">
+                                              
+                                              <strong class="float-end font">Tom Crusie Anthony</strong>
+                                          </div>
+                                          <p class="font">
+                                            Hello, Admin i am here to report that my poll result
+                                            is not displaying the total number of votes that is
+                                            expected, what should i do, or can you send me the
+                                            result for the poll here.
+                                           
+                                            
+                                          </p>
+                                      </div>
+                                      <small class="left text-muted"><span class="glyphicon glyphicon-time"></span>11:54am | Monday 7th</small>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="card-footer">
+                              <div class="input-group">
+                                  <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message" />
+                                  <span class="input-group-btn">
+                                      <button class="btn btn-primary btn-polls" id="btn-chat">
+                                          Send</button>
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </main>
+    </div>
+
+
+
+
+    <section>
+        
+    </section>
+    <script src="./script/script.js"></script>
+    <script src="./script/bootstrap.min.js"></script>
+</body>
+</html>
